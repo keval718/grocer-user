@@ -2,6 +2,7 @@
   "name": "reactstrap-intro",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",
@@ -42,5 +43,8 @@
   },
   "devDependencies": {
     "react-social-icons": "^4.1.0"
+  },
+  "engines": {
+    "node":"12.x"
   }
 }
