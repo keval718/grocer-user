@@ -47,7 +47,7 @@ export default class Login extends Component{
         }
 
         axios
-      .post('http://grocer-server.herokuapp.com/api/users/login', data)
+      .post('https://grocer-server.herokuapp.com/api/users/login', data)
       .then(response => {
         let decodeddata = decode(response.data.token);
         console.log(response.data.token);

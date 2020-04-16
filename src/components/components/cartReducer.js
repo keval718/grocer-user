@@ -20,7 +20,7 @@ const initState = {
 
 }
 
-axios.get('http://grocer-server.herokuapp.com/api/products/getAllProducts').then(res=>{
+axios.get('https://grocer-server.herokuapp.com/api/products/getAllProducts').then(res=>{
 
     initState.items = res.data
     console.log(initState.items[0] + "kjbk")

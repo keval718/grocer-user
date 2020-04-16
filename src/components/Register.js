@@ -95,7 +95,7 @@ onChangePhone(e){
     };
 
     axios
-      .post('http://grocer-server.herokuapp.com/api/users/adduser', data, config)
+      .post('https://grocer-server.herokuapp.com/api/users/adduser', data, config)
       .then(response => {
         let decodeddata = decode(response.data.token);
         console.log(decodeddata);

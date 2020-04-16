@@ -18,7 +18,7 @@ var i = 0;
      }
 
     componentDidMount(){
-    axios.get('http://grocer-server.herokuapp.com/api/products/getAllProducts').then(res=>{
+    axios.get('https://grocer-server.herokuapp.com/api/products/getAllProducts').then(res=>{
 
      if(res.data.length>0){
        this.setState({
