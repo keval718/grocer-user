@@ -37,6 +37,11 @@ class Receipe extends Component{
     }
 
     AddCart = () => {
+        if(this.state.email==null)
+        {
+            window.confirm("Please Login In First");
+            window.location="/Login"
+        }
         const add={
             product: this.props.addedItems,
             fk_user_id:this.state.email,
@@ -53,7 +58,7 @@ class Receipe extends Component{
             console.log(res.data);
         })
        
-        axios.post("https://grocer-server.herokuapp.com/api/mail/sendEmail",email).then(res=>{
+        axios.post("http://localhost:5000/api/mail/sendEmail",email).then(res=>{
             window.confirm("Your Order is Placed and check your mail and show that mail to counter")
             window.location="/Home"
         })

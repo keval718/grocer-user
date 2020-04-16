@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Provider, ReactReduxContext } from 'react-redux';
-import './App.css';
-import { addToCart } from './components/actions/cartActions';
+import '../../App.css';
+import { addToCart } from '../actions/cartActions';
 import axios from 'axios';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 

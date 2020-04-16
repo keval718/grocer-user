@@ -1,7 +1,8 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import './App.css';
+import '../../App.css';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 export default class TopNav extends React.Component {
   constructor(props) {
@@ -27,9 +28,9 @@ export default class TopNav extends React.Component {
   <div class="right">
     
       <Link to="/Home">Home</Link>
-      <Link to="/addToCart">Cart</Link>
-      <Link to="/">About US</Link>
-      <Link to="/">Contact US</Link>
+      <Link to="/addToCart"><ShoppingCartIcon></ShoppingCartIcon></Link>
+      <Link to="/AboutUs">About US</Link>
+      <Link to="/ContactUs">Contact US</Link>
       <Link to="/login">Login</Link>
       <Link to="/register">Register</Link>
      

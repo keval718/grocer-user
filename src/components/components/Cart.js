@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { removeItem,addQuantity,subtractQuantity} from './components/actions/cartActions'
+import { removeItem,addQuantity,subtractQuantity} from '../actions/cartActions'
 import Receipe from './Receipe';
-import './App.css';
+import '../../App.css';
 import {Media} from 'react-bootstrap';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import IndeterminateCheckBoxIcon from '@material-ui/icons/IndeterminateCheckBox';
@@ -66,10 +66,6 @@ class Cart extends Component{
        return(
             <div className="container">
                 <div className="cart">
-             
-                    {/* <ul className="collection" style={{display:'flex'}}>
-                        {addedItems}
-                    </ul> */}
                     {addedItems}
                 </div>  
                 <Receipe/>

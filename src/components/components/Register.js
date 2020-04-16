@@ -113,7 +113,7 @@ onChangePhone(e){
 <div class="form-style-10">
               
               <h1>Sign Up</h1>
-              <p>Create Your Account</p>
+              <h3><b><p>Create Your Account</p></b></h3>
     <form  onSubmit={this.onSubmit}>
             <div class="section"></div>
           <div class="inner-wrap">
@@ -133,6 +133,7 @@ onChangePhone(e){
                 onChange={this.onChangeCountry}/></label>
                   <label>Phone Number <input type="text"  placeholder='Phone Number' name="field9" value={this.state.phone}
                 onChange={this.onChangePhone}/></label>
+                <p >Already Have An Account?</p><Link to="/Login">  Click Here</Link>
         </div>
 
         <div class="button-section">

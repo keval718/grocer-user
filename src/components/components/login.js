@@ -2,7 +2,7 @@ import React, { Fragment, useState, Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import decode from 'jwt-decode';
-import '../App.css';
+import '../../App.css';
 
 export default class Login extends Component{
 
@@ -74,6 +74,7 @@ export default class Login extends Component{
                   onChange={this.onChangeEmail}/></label>
                 <label>Password <input type="password" name="field2" value={this.state.password}
                   onChange={this.onChangePassword}/></label>
+                  <p >Not Register Yet?</p><Link to="/register">  Click Here</Link>
           </div>
 
    
