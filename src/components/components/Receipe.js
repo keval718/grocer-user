@@ -42,6 +42,12 @@ class Receipe extends Component{
             window.confirm("Please Login In First");
             window.location="/Login"
         }
+        if(this.state.total==null)
+        {
+            window.confirm("Please Add Something to cart");
+            window.location="/Home"
+        }
+        else{
         const add={
             product: this.props.addedItems,
             fk_user_id:this.state.email,
@@ -62,6 +68,7 @@ class Receipe extends Component{
             window.confirm("Your Order is Placed and check your mail and show that mail to counter")
             window.location="/Home"
         })
+    }
 
        
     }
