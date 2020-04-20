@@ -60,10 +60,10 @@ class Receipe extends Component{
             console.log(res.data);
         })
        
-        axios.post("http://localhost:5000/api/mail/sendEmail",email).then(res=>{
-            window.confirm("Your Order is Placed and check your mail and show that mail to counter")
-            window.location="/Home"
-        })
+        // axios.post("http://localhost:5000/api/mail/sendEmail",email).then(res=>{
+        //     window.confirm("Your Order is Placed and check your mail and show that mail to counter")
+        //     window.location="/Home"
+        // })
     }
 
        
