@@ -2,7 +2,6 @@
   "name": "reactstrap-intro",
   "version": "0.1.0",
   "private": true,
-  "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",
@@ -26,8 +25,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -43,9 +46,5 @@
   },
   "devDependencies": {
     "react-social-icons": "^4.1.0"
-  },
-  "engines": {
-    "node":"12.x",
-    "npm":"6.13.4"
   }
 }
